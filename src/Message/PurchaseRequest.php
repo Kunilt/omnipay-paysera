@@ -75,7 +75,7 @@ class PurchaseRequest extends AbstractRequest
 
         $param = array(
             'projectid' => Helper::createParam($this->getProjectId(), 11),
-            'orderid' => Helper::createParam($this->getTransactionId(), 11),
+            'orderid' => Helper::createParam($this->getTransactionId()),
             'accepturl' => Helper::createParam($this->getReturnUrl()),
             'cancelurl' => Helper::createParam($this->getCancelUrl()),
             'callbackurl' => Helper::createParam($this->getNotifyUrl()),
